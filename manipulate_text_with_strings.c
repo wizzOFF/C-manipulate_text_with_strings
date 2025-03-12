@@ -25,15 +25,16 @@ int main(int argc, char *argv[])
 
 int main(int argc, char *argv[])
 {
-    char chaine[6]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
+    //char chaine[6]; // Tableau de 6 char pour stocker S-a-l-u-t + le \0
 
     // Initialisation de la chaîne (on écrit les caractères un à un en mémoire)
-    chaine[0] = 'S';
-    chaine[1] = 'a';
-    chaine[2] = 'l';
-    chaine[3] = 'u';
-    chaine[4] = 't';
-    chaine[5] = '\0';
+    //chaine[0] = 'S';
+    //chaine[1] = 'a';
+    //chaine[2] = 'l';
+    //chaine[3] = 'u';
+    //chaine[4] = 't';
+    //chaine[5] = '\0';
+    char chaine[] = "Salut"; // La taille du tableau chaine est automatiquement calculée
 
     // Affichage de la chaîne grâce au %s du printf
     printf("%s", chaine);
