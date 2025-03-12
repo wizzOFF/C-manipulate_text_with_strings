@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 */
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,6 +38,18 @@ int main(int argc, char *argv[])
 
     // Affichage de la chaîne grâce au %s du printf
     printf("%s", chaine);
+
+    return 0;
+}
+*/
+
+int main(int argc, char *argv[])
+{
+    char prenom[100];
+
+    printf("Comment t'appelles-tu ? ");
+    scanf("%s", prenom);
+    printf("Salut %s, je suis heureux de te rencontrer !", prenom);
 
     return 0;
 }
