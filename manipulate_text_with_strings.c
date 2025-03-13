@@ -157,7 +157,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 */
-
+/*
 char* strpbrk(const char* chaine, const char* lettresARechercher);
 
 int main(int argc, char *argv[])
@@ -171,6 +171,24 @@ int main(int argc, char *argv[])
     {
         printf("Voici la fin de la chaine a partir du premier des caracteres trouves : %s", suiteChaine);
     }
+
+    return 0;
+}
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+    char chaine[100];
+    int age = 15;
+
+    // On écrit "Tu as 15 ans" dans chaine
+    sprintf(chaine, "Tu as %d ans !", age);
+
+    // On affiche chaine pour vérifier qu'elle contient bien cela :
+    printf("%s", chaine);
 
     return 0;
 }
