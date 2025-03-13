@@ -102,7 +102,7 @@ int longueurChaine(const char* chaine)
     return nombreDeCaracteres;
 }
 */
-
+/*
 char* strcpy(char* copieDeLaChaine, const char* chaineACopier);
 
 int main(int argc, char *argv[])
@@ -118,6 +118,25 @@ int main(int argc, char *argv[])
     // Si tout s'est bien passé, la copie devrait être identique à chaine
     printf("chaine vaut : %s\n", chaine);
     printf("copie vaut : %s\n", copie);
+
+    return 0;
+}
+*/
+
+int strcmp(const char* chaine1, const char* chaine2);
+
+int main(int argc, char *argv[])
+{
+    char chaine1[] = "Texte de test", chaine2[] = "Texte de test";
+
+    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
+    {
+        printf("Les chaines sont identiques\n");
+    }
+    else
+    {
+        printf("Les chaines sont differentes\n");
+    }
 
     return 0;
 }
