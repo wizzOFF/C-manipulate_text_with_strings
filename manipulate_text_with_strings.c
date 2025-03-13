@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 */
-
+/*
 int longueurChaine(const char* chaine);
 
 int main(int argc, char *argv[])
@@ -100,4 +100,24 @@ int longueurChaine(const char* chaine)
     nombreDeCaracteres--; // On retire 1 caractère de long pour ne pas compter le caractère \0
 
     return nombreDeCaracteres;
+}
+*/
+
+char* strcpy(char* copieDeLaChaine, const char* chaineACopier);
+
+int main(int argc, char *argv[])
+{
+    // On crée une chaîne "chaine" qui contient un peu de texte
+    // et une copie (vide) de taille 100 pour être sûr d'avoir la place
+    // pour la copie
+    
+    char chaine[] = "Texte", copie[100] = {0};
+
+    strcpy(copie, chaine); // On copie "chaine" dans "copie"
+
+    // Si tout s'est bien passé, la copie devrait être identique à chaine
+    printf("chaine vaut : %s\n", chaine);
+    printf("copie vaut : %s\n", copie);
+
+    return 0;
 }
