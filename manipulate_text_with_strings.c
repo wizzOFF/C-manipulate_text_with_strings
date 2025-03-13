@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 */
-
+/*
 char* strchr(const char* chaine, int caractereARechercher);
 
 int main(int argc, char *argv[])
@@ -152,6 +152,24 @@ int main(int argc, char *argv[])
     if (suiteChaine != NULL) // Si on a trouvé quelque chose
     {
         printf("Voici la fin de la chaine a partir du premier d : %s", suiteChaine);
+    }
+
+    return 0;
+}
+*/
+
+char* strpbrk(const char* chaine, const char* lettresARechercher);
+
+int main(int argc, char *argv[])
+{
+    char *suiteChaine;
+
+    // On cherche la première occurrence de x, d ou s dans "Texte de test" 
+    suiteChaine = strpbrk("Texte de test", "xds");
+
+    if (suiteChaine != NULL)
+    {
+        printf("Voici la fin de la chaine a partir du premier des caracteres trouves : %s", suiteChaine);
     }
 
     return 0;
